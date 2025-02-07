@@ -1,0 +1,565 @@
+VERSION "V9030"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IMD_iso175C
+
+
+BO_ 2632712180 IMD_TP_DT: 8 IMD_iso175C
+ SG_ IMD_G_TP_DT_Data : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_TP_DT_PacketNumber : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2632777716 IMD_TP_CM_BAM: 8 IMD_iso175C
+ SG_ IMD_G_TP_CM_BAM_PGN : 40|24@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_TP_CM_BAM_Reserved : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_TP_CM_BAM_NumOfPackets : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_TP_CM_BAM_TotNumOfBytes : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_TP_CM_BAM_Broadcast : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565806068 IMD_Response: 8 IMD_iso175C
+ SG_ IMD_Rsp_G_SelfDiagBufferState_FE m254 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_SelfDiagBufferState_FD m253 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_PreEstState_0xFD m253 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_PreEstimationDiff m253 : 16|16@1+ (0.001,0) [0|64.255] "V" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_PreEstState_0xFE m254 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Eswitch_Status_Unused m112 : 10|6@1+ (1,0) [63|63] "" Vector__XXX
+ SG_ IMD_Rsp_G_Earthlift_Status m112 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit15 m108 : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit14 m108 : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit13 m108 : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit12 m108 : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit11 m108 : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit10 m108 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit09 m108 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit08 m108 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit07 m108 : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit06 m108 : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit05 m108 : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit04 m108 : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit03 m108 : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit02 m108 : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit01 m108 : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Warn_Alarm_Bit00 m108 : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Status_Lock_Unused m106 : 10|6@1+ (1,0) [63|63] "" Vector__XXX
+ SG_ IMD_Rsp_G_Status_Lock m106 : 8|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Voltage_Thrs m102 : 8|16@1+ (1,0) [0|1000] "V" Vector__XXX
+ SG_ IMD_Rsp_G_Voltage_Mode_Unused m100 : 10|6@1+ (1,0) [63|63] "" Vector__XXX
+ SG_ IMD_Rsp_G_Voltage_Mode m100 : 8|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ IMD_Rsp_G_Voltage_HVpos_Earth m98 : 8|16@1+ (0.05,-1606) [-1150|1150] "V" Vector__XXX
+ SG_ IMD_Rsp_G_Voltage_HVneg_Earth m96 : 8|16@1+ (0.05,-1606) [-1150|1150] "V" Vector__XXX
+ SG_ IMD_Rsp_G_Voltage_HV m94 : 8|16@1+ (0.05,-1606) [-1150|1150] "V" Vector__XXX
+ SG_ IMD_Rsp_G_Voltage_Counter m92 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_Rsp_G_HV_Frequency m90 : 8|16@1+ (0.0078125,0) [0|501.9921875] "Hz" Vector__XXX
+ SG_ IMD_Rsp_G_Selftest_Period m88 : 8|16@1+ (10,0) [10|64255] "s" Vector__XXX
+ SG_ IMD_Rsp_G_Capacity_Counter m84 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_Rsp_G_Capacity m82 : 8|16@1+ (0.1,0) [0.1|20] "uF" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_PreEstMaxDiffFact m116 : 8|16@1+ (0.01,0) [0|1000] "V" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_ThrsFirstRefEst m114 : 8|16@1+ (1,0) [0|1000] "V" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_Time_elapsed m80 : 8|16@1+ (1,0) [0|64255] "s" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_R_iso_Original m78 : 8|16@1+ (1,0) [0|50000] "kOhm" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_R_iso_Corrected m76 : 8|16@1+ (1,0) [0|37500] "kOhm" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_Thrs_Warning m74 : 8|16@1+ (1,0) [30|2000] "kOhm" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_Thrs_Timeout m72 : 8|16@1+ (1,0) [0|64225] "s" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_Thrs_Error m70 : 8|16@1+ (1,0) [30|2000] "kOhm" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_R_iso_StatusUnused m68 : 10|6@1+ (1,0) [63|63] "" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_R_iso_Status m68 : 8|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_R_iso_pos m66 : 8|16@1+ (1,0) [0|50000] "kOhm" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_R_iso_neg m64 : 8|16@1+ (1,0) [0|50000] "kOhm" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_Quality m62 : 8|8@1+ (1,0) [0|250] "%" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_Power_On_Profile m58 : 8|8@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ IMD_Rsp_G_Iso_Active_Profile m56 : 8|8@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ IMD_Rsp_G_Isolation_Counter m54 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_Req_G_Selfh_Iso_Alarm_Unused m48 : 10|6@1+ (1,0) [63|63] "" Vector__XXX
+ SG_ IMD_Rsp_G_Selfholding_Iso_Alarm m48 : 8|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Rsp_G_Unbalance_Thrs m46 : 8|8@1+ (1,0) [0|45] "%" Vector__XXX
+ SG_ IMD_Rsp_G_Unbalance_Counter m44 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_Rsp_G_Unbalance m42 : 8|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ IMD_Rsp_G_HW_DeviceTypePartB m38 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_DeviceTypePartA m36 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Software_Version m34 : 8|16@1+ (1,0) [0|64255] "" Vector__XXX
+ SG_ IMD_Rsp_G_Software_D_Number m32 : 8|16@1+ (1,0) [720|720] "" Vector__XXX
+ SG_ IMD_Rsp_G_Software_Build_Number m30 : 8|16@1+ (1,0) [0|64255] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_SerialNumberPartB m28 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_SerialNumberPartA m26 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_Item_NumberPartB m24 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_Item_NumberPartA m22 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_AH_NumberPartB m20 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_AH_NumberPartA m18 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_HW_AH_History m16 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Rsp_G_Bootloader_Version m14 : 8|16@1+ (1,0) [0|64255] "" Vector__XXX
+ SG_ IMD_Rsp_G_Bootloader_D_Number m12 : 8|16@1+ (1,0) [721|721] "" Vector__XXX
+ SG_ IMD_Rsp_G_Bootloader_BuildNumber m10 : 8|16@1+ (1,0) [0|64255] "" Vector__XXX
+ SG_ IMD_Rsp_Response_Index M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565862423 IMD_Request: 8 Vector__XXX
+ SG_ IMD_Req_S_Iso_PreEstMaxDiffFact m117 : 8|16@1+ (0.01,0) [0|10] "" Vector__XXX
+ SG_ IMD_Req_S_Iso_ThrsFirstRefEst m115 : 8|16@1+ (1,0) [0|1000] "V" Vector__XXX
+ SG_ IMD_Req_G_Earthlift_Status m112 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Warning_Alarm_Status m108 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Status_Lock m106 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Device_Activity m104 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Voltage_Thrs m102 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Voltage_Mode m100 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Voltage_HVpos_Earth m98 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Voltage_HVneg_Earth m96 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Voltage_HV m94 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Voltage_Counter m92 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HV_Frequency m90 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Selftest_Period m88 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Capacity_Counter m84 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Capacity m82 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_PreEstMaxDiffFact m116 : 8|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_ThrsFirstRefEst m114 : 8|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Time_elapsed m80 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_R_iso_Original m78 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_R_iso_Corrected m76 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Thrs_Warning m74 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Thrs_Timeout m72 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Thrs_Error m70 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_R_iso_Status m68 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_R_iso_pos m66 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_R_iso_neg m64 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Quality m62 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Power_On_Profile m58 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Active_Profile m56 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Iso_Counter m54 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Device_Error m52 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Selfh_Iso_Alarm m48 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Unbalance_Thrs m46 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Unbalance_Counter m44 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Unbalance m42 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_DeviceTypePartB m38 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_DeviceTypePartA m36 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Software_Version m34 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Software_D_Number m32 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Software_Build_Number m30 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_SerialNumberPartB m28 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_SerialNumberPartA m26 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_Item_NumberPartB m24 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_Item_NumberPartA m22 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_AH_NumberPartB m20 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_HW_AH_NumberPartA m18 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Hardware_AH_History m16 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Bootloader_Version m14 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Bootloader_D_Number m12 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_G_Bootloader_BuildNumber m10 : 8|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_Req_S_Earthlift_Status m113 : 8|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Req_S_Factory_Reset m111 : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Req_S_Status_Lock m107 : 8|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Req_S_Voltage_Thrs m103 : 8|16@1+ (1,0) [0|1000] "V" Vector__XXX
+ SG_ IMD_Req_S_Voltage_Mode m101 : 8|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ IMD_Req_S_Selftest_Period m89 : 8|16@1+ (10,0) [10|64255] "s" Vector__XXX
+ SG_ IMD_Req_S_Selftest_Trigger m87 : 8|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ IMD_Req_S_Iso_Thrs_Warning m75 : 8|16@1+ (1,0) [30|2000] "kOhm" Vector__XXX
+ SG_ IMD_Req_S_Iso_Thrs_Timeout m73 : 8|16@1+ (1,0) [0|64255] "s" Vector__XXX
+ SG_ IMD_Req_S_Iso_Thrs_Error m71 : 8|16@1+ (1,0) [30|2000] "kOhm" Vector__XXX
+ SG_ IMD_Req_S_Iso_Power_On_Profile m59 : 8|8@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ IMD_Req_S_Iso_Active_Profile m57 : 8|8@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ IMD_Req_S_Selfh_IsoAlarm_Reset m51 : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Req_S_Selfholding_Iso_Alarm m49 : 8|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Req_S_Unbalance_Thrs m47 : 8|8@1+ (1,0) [0|45] "%" Vector__XXX
+ SG_ IMD_Req_Request_Index M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566849012 IMD_InfoGeneral: 8 IMD_iso175C
+ SG_ IMD_G_Iso_R_iso_Corrected : 0|16@1+ (1,0) [0|37500] "kOhm" Vector__XXX
+ SG_ IMD_G_Iso_R_iso_Status : 16|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ IMD_G_Iso_Counter : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit00 : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit01 : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit02 : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit03 : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit04 : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit05 : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit06 : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit07 : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit08 : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit09 : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit10 : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit11 : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_Warni_Alarm_Bit12 : 44|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit13 : 45|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit14 : 46|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_Warn_Alarm_Bit15 : 47|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_G_Device_Activity : 48|8@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 2566849268 IMD_InfoIsolationDetail: 8 IMD_iso175C
+ SG_ IMD_G_Iso_R_iso_neg : 0|16@1+ (1,0) [0|50000] "kOhm" Vector__XXX
+ SG_ IMD_G_Iso_R_iso_pos : 16|16@1+ (1,0) [0|50000] "kOhm" Vector__XXX
+ SG_ IMD_G_Iso_R_iso_Original : 32|16@1+ (1,0) [0|50000] "kOhm" Vector__XXX
+ SG_ IMD_G_Iso_Counter_Detail : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_G_Iso_Quality : 56|8@1+ (1,0) [0|255] "%" Vector__XXX
+
+BO_ 2566849524 IMD_InfoVoltage: 8 IMD_iso175C
+ SG_ IMD_G_Voltage_HV : 0|16@1+ (0.05,-1606) [-1150|1150] "V" Vector__XXX
+ SG_ IMD_G_Voltage_HVneg_Earth : 16|16@1+ (0.05,-1606) [-1150|1150] "V" Vector__XXX
+ SG_ IMD_G_Voltage_HVpos_Earth : 32|16@1+ (0.05,-1606) [-1150|1150] "V" Vector__XXX
+ SG_ IMD_G_Voltage_Counter : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566849780 IMD_InfoItSystem: 8 IMD_iso175C
+ SG_ IMD_G_Capacity : 0|16@1+ (0.1,0) [0.1|20] "uF" Vector__XXX
+ SG_ IMD_G_Capacity_Counter : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_G_Unbalance : 24|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ IMD_G_Unbalance_Counter : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_G_HV_Frequency : 40|16@1+ (0.0078125,0) [0|501.9921875] "Hz" Vector__XXX
+
+
+
+EV_ VoltageMode: 0 [0|0] "" 0 1 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Voltage_meas_counter: 0 [0|0] "" 0 2 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Voltage_HV_System: 0 [0|0] "" 0 3 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Voltage_Frequency: 0 [0|0] "" 0 4 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Unbalance_meas_counter: 0 [0|0] "" 0 5 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Unbalance: 0 [0|0] "" 0 6 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ TimeSinceLastMeas: 0 [0|0] "" 0 7 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ThresholdWarning: 0 [0|0] "" 0 8 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ThresholdUndervoltage: 0 [0|0] "" 0 9 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ThresholdUnbalance: 0 [0|0] "" 0 10 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ThresholdTimeout: 0 [0|0] "" 0 11 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ThresholdFirstReEst: 0 [0|0] "" 0 12 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ThresholdEstMaxDiff: 0 [0|0] "" 0 13 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ThresholdError: 0 [0|0] "" 0 14 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ SW_Version: 0 [0|0] "" 0 15 DUMMY_NODE_VECTOR8000 Vector__XXX;
+
+EV_ SN: 0 [0|0] "" 0 16 DUMMY_NODE_VECTOR8000 Vector__XXX;
+
+EV_ SelfTestPeriod: 0 [0|0] "" 0 17 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ SelfTestCmd: 0 [0|0] "" 0 18 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ SelfHolding: 0 [0|0] "" 0 19 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Read_Info_Voltage: 0 [0|0] "" 0 20 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Read_Info_System: 0 [0|0] "" 0 21 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Read_Info_IsolationDetail: 0 [0|0] "" 0 22 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ R_iso_pos: 0 [0|0] "" 0 23 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ R_iso_original: 0 [0|0] "" 0 24 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ R_iso_neg: 0 [0|0] "" 0 25 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Quality: 0 [0|0] "" 0 26 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ PowerOnProfile: 0 [0|0] "" 0 27 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Lock: 0 [0|0] "" 0 28 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ LedParamChangeOk: 0 [0|0] "" 0 29 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ LedParamChangeFalse: 0 [0|0] "" 0 30 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ HV_pos_to_earth: 0 [0|0] "" 0 31 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ HV_neg_to_earth: 0 [0|0] "" 0 32 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ FactoryReset: 0 [0|0] "" 0 33 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Earthlift: 0 [0|0] "" 0 34 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ ClearAlarm: 0 [0|0] "" 0 35 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Capacity_meas_counter: 0 [0|0] "" 0 36 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Capacity: 0 [0|0] "" 0 37 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ BNummer: 0 [0|0] "" 0 38 DUMMY_NODE_VECTOR8000 Vector__XXX;
+
+EV_ ActiveProfile: 0 [0|0] "" 0 39 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+CM_ SG_ 2565806068 IMD_Rsp_G_Earthlift_Status "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit15 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit14 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit13 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit12 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit11 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit10 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit09 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit08 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit07 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit06 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit05 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit04 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit03 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit02 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit01 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit00 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Status_Lock "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Voltage_Thrs "ValueType: Identifier = 145, Name = SAEev02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Voltage_Mode "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Voltage_HVpos_Earth "ValueType: Identifier = 461, Name = SAEfq04";
+CM_ SG_ 2565806068 IMD_Rsp_G_Voltage_HVneg_Earth "ValueType: Identifier = 461, Name = SAEfq04";
+CM_ SG_ 2565806068 IMD_Rsp_G_Voltage_HV "ValueType: Identifier = 461, Name = SAEfq04";
+CM_ SG_ 2565806068 IMD_Rsp_G_Voltage_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2565806068 IMD_Rsp_G_HV_Frequency "ValueType: Identifier = 461, Name = SAEfq04";
+CM_ SG_ 2565806068 IMD_Rsp_G_Selftest_Period "ValueType: Identifier = 464, Name = SAEtm25";
+CM_ SG_ 2565806068 IMD_Rsp_G_Capacity_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2565806068 IMD_Rsp_G_Capacity "ValueType: Identifier = 283, Name = SAEmd01";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_PreEstMaxDiffFact "ValueType: Identifier = 362, Name = SAEr05";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_ThrsFirstRefEst "ValueType: Identifier = 145, Name = SAEev02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_Time_elapsed "ValueType: Identifier = 64, Name = SAEtm05";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_R_iso_Original "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_R_iso_Corrected "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_Thrs_Warning "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_Thrs_Timeout "ValueType: Identifier = 64, Name = SAEtm05";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_Thrs_Error "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_R_iso_Status "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_R_iso_pos "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_R_iso_neg "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_Quality "ValueType: Identifier = 46, Name = SAEpc06";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_Power_On_Profile "ValueType: Identifier = 129, Name = SAEct02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Iso_Active_Profile "ValueType: Identifier = 129, Name = SAEct02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Isolation_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2565806068 IMD_Rsp_G_Selfholding_Iso_Alarm "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565806068 IMD_Rsp_G_Unbalance_Thrs "ValueType: Identifier = 46, Name = SAEpc06";
+CM_ SG_ 2565806068 IMD_Rsp_G_Unbalance_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2565806068 IMD_Rsp_G_Unbalance "ValueType: Identifier = 46, Name = SAEpc06";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_DeviceTypePartB "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_DeviceTypePartA "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_Software_Version "ValueType: Identifier = 373, Name = SAEid03";
+CM_ SG_ 2565806068 IMD_Rsp_G_Software_D_Number "ValueType: Identifier = 373, Name = SAEid03";
+CM_ SG_ 2565806068 IMD_Rsp_G_Software_Build_Number "ValueType: Identifier = 373, Name = SAEid03";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_SerialNumberPartB "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_SerialNumberPartA "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_Item_NumberPartB "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_Item_NumberPartA "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_AH_NumberPartB "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_HW_AH_NumberPartA "ValueType: Identifier = 258, Name = SAEatnd0200";
+CM_ SG_ 2565806068 IMD_Rsp_G_Bootloader_Version "ValueType: Identifier = 373, Name = SAEid03";
+CM_ SG_ 2565806068 IMD_Rsp_G_Bootloader_D_Number "ValueType: Identifier = 373, Name = SAEid03";
+CM_ SG_ 2565806068 IMD_Rsp_G_Bootloader_BuildNumber "ValueType: Identifier = 373, Name = SAEid03";
+CM_ SG_ 2565862423 IMD_Req_S_Iso_PreEstMaxDiffFact "ValueType: Identifier = 362, Name = SAEr05";
+CM_ SG_ 2565862423 IMD_Req_S_Iso_ThrsFirstRefEst "ValueType: Identifier = 145, Name = SAEev02";
+CM_ SG_ 2565862423 IMD_Req_S_Earthlift_Status "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565862423 IMD_Req_S_Factory_Reset "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565862423 IMD_Req_S_Status_Lock "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565862423 IMD_Req_S_Voltage_Thrs "ValueType: Identifier = 145, Name = SAEev02";
+CM_ SG_ 2565862423 IMD_Req_S_Voltage_Mode "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565862423 IMD_Req_S_Selftest_Period "ValueType: Identifier = 464, Name = SAEtm25";
+CM_ SG_ 2565862423 IMD_Req_S_Selftest_Trigger "ValueType: Identifier = 120, Name = SAEcb01";
+CM_ SG_ 2565862423 IMD_Req_S_Iso_Thrs_Warning "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565862423 IMD_Req_S_Iso_Thrs_Timeout "ValueType: Identifier = 64, Name = SAEtm05";
+CM_ SG_ 2565862423 IMD_Req_S_Iso_Thrs_Error "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2565862423 IMD_Req_S_Iso_Power_On_Profile "ValueType: Identifier = 129, Name = SAEct02";
+CM_ SG_ 2565862423 IMD_Req_S_Iso_Active_Profile "ValueType: Identifier = 129, Name = SAEct02";
+CM_ SG_ 2565862423 IMD_Req_S_Selfh_IsoAlarm_Reset "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2565862423 IMD_Req_S_Selfholding_Iso_Alarm "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2565862423 IMD_Req_S_Unbalance_Thrs "ValueType: Identifier = 46, Name = SAEpc06";
+CM_ SG_ 2566849012 IMD_G_Iso_R_iso_Corrected "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2566849012 IMD_G_Iso_R_iso_Status "ValueType: Identifier = 87, Name = SAEbs02";
+CM_ SG_ 2566849012 IMD_G_Iso_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit00 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit01 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit02 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit03 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit04 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit05 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit06 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit07 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit08 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit09 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit10 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit11 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warni_Alarm_Bit12 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit13 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit14 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Warn_Alarm_Bit15 "ValueType: Identifier = 86, Name = SAEbs01";
+CM_ SG_ 2566849012 IMD_G_Device_Activity "ValueType: Identifier = 129, Name = SAEct02";
+CM_ SG_ 2566849268 IMD_G_Iso_R_iso_neg "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2566849268 IMD_G_Iso_R_iso_pos "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2566849268 IMD_G_Iso_R_iso_Original "ValueType: Identifier = 383, Name = SAErs02";
+CM_ SG_ 2566849268 IMD_G_Iso_Counter_Detail "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2566849268 IMD_G_Iso_Quality "ValueType: Identifier = 46, Name = SAEpc06";
+CM_ SG_ 2566849524 IMD_G_Voltage_HV "ValueType: Identifier = 461, Name = SAEfq04";
+CM_ SG_ 2566849524 IMD_G_Voltage_HVneg_Earth "ValueType: Identifier = 461, Name = SAEfq04";
+CM_ SG_ 2566849524 IMD_G_Voltage_HVpos_Earth "ValueType: Identifier = 461, Name = SAEfq04";
+CM_ SG_ 2566849524 IMD_G_Voltage_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2566849780 IMD_G_Capacity "ValueType: Identifier = 283, Name = SAEmd01    ";
+CM_ SG_ 2566849780 IMD_G_Capacity_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2566849780 IMD_G_Unbalance "ValueType: Identifier = 46, Name = SAEpc06";
+CM_ SG_ 2566849780 IMD_G_Unbalance_Counter "ValueType: Identifier = 133, Name = SAEct03";
+CM_ SG_ 2566849780 IMD_G_HV_Frequency "ValueType: Identifier = 461, Name = SAEfq04";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","OnChangeAndIfActive","OnChangeAndIfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigStartValue" INT -2147483648 2147483647;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Eswitch_Status_Unused 63;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Status_Lock_Unused 63;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Voltage_Mode_Unused 63;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Voltage_Mode 2;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Voltage_HVpos_Earth 32120;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Voltage_HVneg_Earth 32120;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Voltage_HV 32120;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Selftest_Period 36;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_PreEstMaxDiffFact 20000;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_ThrsFirstRefEst 100;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_Thrs_Warning 500;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_Thrs_Timeout 60;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_Thrs_Error 100;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_R_iso_StatusUnused 63;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_Power_On_Profile 1;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Iso_Active_Profile 1;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Req_G_Selfh_Iso_Alarm_Unused 63;
+BA_ "GenSigStartValue" SG_ 2565806068 IMD_Rsp_G_Unbalance 50;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Iso_ThrsFirstRefEst 100;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Voltage_Mode 2;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Selftest_Period 36;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Iso_Thrs_Warning 500;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Iso_Thrs_Timeout 60;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Iso_Thrs_Error 100;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Iso_Power_On_Profile 1;
+BA_ "GenSigStartValue" SG_ 2565862423 IMD_Req_S_Iso_Active_Profile 1;
+BA_ "GenSigStartValue" SG_ 2566849524 IMD_G_Voltage_HV 32120;
+BA_ "GenSigStartValue" SG_ 2566849524 IMD_G_Voltage_HVneg_Earth 32120;
+BA_ "GenSigStartValue" SG_ 2566849524 IMD_G_Voltage_HVpos_Earth 32120;
+BA_ "GenSigStartValue" SG_ 2566849780 IMD_G_Unbalance 50;
+VAL_ 2565806068 IMD_Rsp_G_SelfDiagBufferState_FE 3 "DiagBufferState_eOverwritten" 2 "DiagBufferState_eSent" 1 "DiagBufferState_eNewData" 0 "DiagBufferState_eEmpty" ;
+VAL_ 2565806068 IMD_Rsp_G_SelfDiagBufferState_FD 3 "DiagBufferState_eOverwritten" 2 "DiagBufferState_eSent" 1 "DiagBufferState_eNewData" 0 "DiagBufferState_eEmpty" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_PreEstState_0xFD 0 "StateChkInit" 1 "eStateChkFinished" 2 "eStateFirstReferenceFinished" 255 "SNV=Signal not valid 255" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_PreEstimationDiff 64000 "upper Limit" 65535 "SAEev06_SNV" 0 "lower Limit" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_PreEstState_0xFE 0 "StateChkInit" 1 "eStateChkFinished" 2 "eStateFirstReferenceFinished" 255 "SNV=Signal not valid 255" ;
+VAL_ 2565806068 IMD_Rsp_G_Earthlift_Status 0 "Earth Disconnector closed" 1 "Eeath Disconnector open" 2 "reserved" 3 "SNV=Signal not valid" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit15 0 "NOT SNV, Other Flags valid" 1 "SNV, Other flags invalid" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit14 0 "reserved, no Alarm" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit13 0 "reserved, no Alarm" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit12 0 "reserved, no Alarm" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit11 0 "reserved, no Alarm" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit10 0 "Eartlift closed" 1 "Eartlift opened" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit09 0 "NOT Unsafe to Start" 1 "Unsafe to Start (don't Start)" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit08 0 "Undervoltage alarm inactive" 1 "Undervoltage alarm active" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit07 0 "NO Unbalance Alarm, below Thrs" 1 "Unbalance Alarm, above Thrs" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit06 0 "Iso Outdated alarm inactive" 1 "Iso Outdated alarm active" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit05 0 "Iso Warning alarm inactive" 1 "Iso Warning alarm active" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit04 0 "Iso Alarm Error inactive" 1 "Iso Alarm Error active" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit03 0 "Connection Earth OK" 1 "Connection Earth Error" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit02 0 "Connection HV neg OK" 1 "Connection HV neg Error" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit01 0 "Connection HV pos OK" 1 "Connection HV pos Error" ;
+VAL_ 2565806068 IMD_Rsp_G_Warn_Alarm_Bit00 0 "Device Error NOT active" 1 "Device Error active" ;
+VAL_ 2565806068 IMD_Rsp_G_Status_Lock 3 "SNV = Signal not valid" 2 "reserved" 1 "locked, write disabled" 0 "unlocked,  write enabled" ;
+VAL_ 2565806068 IMD_Rsp_G_Voltage_Thrs 1000 "upper Limit" 1 "lower Limit" 65535 "SAEev02_SNV" 0 "deactivatred" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Voltage_Mode 0 "AC + DC" 1 "AC" 2 "DC" 3 "SNV=Signal not valid" ;
+VAL_ 2565806068 IMD_Rsp_G_Voltage_HVpos_Earth 55120 "upper Limit" 9120 "lower Limit" 65535 "SAEev04_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Voltage_HVneg_Earth 55120 "upper Limit" 9120 "lower Limit" 65535 "SAEev04_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Voltage_HV 55120 "upper Limit" 9120 "lower Limit" 65535 "SAEev04_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_HV_Frequency 64000 "upper Limit" 65535 "SAEfq04_SNV" 0 "lower Limit" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Selftest_Period 65535 "SNV = Signal not valid" 64255 "upper Limit" 1 "lower Limit" 0 "automatic selftest deactivated" ;
+VAL_ 2565806068 IMD_Rsp_G_Capacity 200 "upper Limit" 1 "lower Limit" 65535 "SAEmd01_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_PreEstMaxDiffFact 1000 "upper Limit" 65535 "SAEr05_SNV" 0 "lower Limit" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_ThrsFirstRefEst 1000 "upper Limit" 65535 "SAEev02_SNV" 0 "lower Limit" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_Time_elapsed 65535 "SVN=Signal not valid" 64255 "upper Limit" 0 "lower Limit" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_R_iso_Original 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_R_iso_Corrected 37500 "upper Limit, depends on profile" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_Thrs_Warning 2000 "upper Limit" 30 "lower Limit" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_Thrs_Timeout 65535 "SVN=Signal not valid" 64255 "upper Limit" 1 "lower Limit" 0 "Alarm deactivated" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_Thrs_Error 2000 "upper Limit" 30 "lower Limit" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_R_iso_Status 0 "Estimation" 1 "Approximation" 2 "Normal Measurement" 3 "SNV = Signal not valid" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_R_iso_pos 50000 "upper Limit" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_R_iso_neg 50000 "upper Limit" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_Quality 100 "upper Limit" 255 "SAEpc06_SNV" 0 "Minimum displayable" 250 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_Power_On_Profile 255 "SNV=Signal not valid 255" 6 "Service" 5 "Disturbed" 4 "High Capacity" 3 "High Capacity with fast startup" 2 "Standard" 1 "Standard with fast startup" 0 "Custom Profile" ;
+VAL_ 2565806068 IMD_Rsp_G_Iso_Active_Profile 255 "SNV=Signal not valid 255" 6 "Service" 5 "Disturbed" 4 "High Capacity" 3 "High Capacity with fast startup" 2 "Standard" 1 "Standard with fast startup" 0 "Custom Profile" ;
+VAL_ 2565806068 IMD_Rsp_G_Selfholding_Iso_Alarm 0 "automatic Iso-alarm reset" 1 "self-holding Iso-alarm" 2 "reserved" 3 "SNV=Signal not valid" ;
+VAL_ 2565806068 IMD_Rsp_G_Unbalance_Thrs 45 "upper Limit" 5 "lower Limit" 255 "SAEpc06_SNV" 0 "Unbalance alarm deactivated" ;
+VAL_ 2565806068 IMD_Rsp_G_Unbalance 255 "SAEpc06_SNV" 0 "Error at DC Minus" 50 "Balanced" 100 "Error at DC Plus" ;
+VAL_ 2565806068 IMD_Rsp_G_Software_Version 65535 "SAEid03_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Software_D_Number 65535 "SAEid03_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Software_Build_Number 65535 "SAEid03_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Bootloader_Version 65535 "SAEid03_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Bootloader_D_Number 65535 "SAEid03_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_G_Bootloader_BuildNumber 65535 "SAEid03_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2565806068 IMD_Rsp_Response_Index 253 "get PreEstState_Diff" 254 "get PreEstimationState" 116 "get PreEstimation_MaxDiffFactor" 114 "get Threshold_FirstRefEstimation" 112 "get Earthlift_Status" 108 "get Status_Warnings and Alarms" 106 "get Status_Lock" 104 "get Status_Device Activity" 102 "get Threshold Undervoltage" 100 "get Voltage_Mode" 98 "get Voltage_HV_pos to Earth" 96 "get Voltage_HV_neg to Earth" 94 "get Voltage_HV system" 92 "get Voltage_Measurement Counter" 90 "get Voltage_HV frequency" 88 "get Self test_Period" 84 "get Capacity_Measurement Counter" 82 "get Capacity_Masured Value" 80 "get Time elapsed since last meas" 78 "get Isolation_R_iso_original" 76 "get Isolation_R_iso_corrected" 74 "get Isolation_Threshold Warning" 72 "get Threshold Timeout Meas" 70 "get Isolation_Threshold Error" 68 "get Isolation_R_iso_status" 66 "get Isolation_R_iso_pos" 64 "get Isolation_R_iso_neg" 62 "get Isolation_Quality" 58 "get Isolation_Power-On Profile" 56 "get Isolation_Active Profile" 54 "get Isolation_meas counter" 52 "get Device Status_Device Error" 48 "get Self-holding Activation" 46 "get Unbalance_Threshold" 44 "get Unbalance_Meas Counter" 42 "get Unbalance_Measured Value" 38 "get Device_TypePartB" 36 "get Device_TypePartA" 34 "get Software_Version" 32 "get Software_D-Number" 30 "get Software_Build Number" 28 "get Hardware_SerialNumberPartB" 26 "get Hardware_SerialNumberPartA" 24 "get Hardware_Item-NumberPartB" 22 "get Hardware_Item-NumberPartA" 20 "get Hardware_AH-NumberPartB" 18 "get Hardware_AH-NumberPartA" 16 "get Hardware_AH-History" 14 "get Bootloader_Version" 12 "get Bootloader_D-Number" 10 "get Bootloader_BuildNumber" ;
+VAL_ 2565862423 IMD_Req_S_Iso_PreEstMaxDiffFact 1000 "upper Limit" 0 "lower Limit" ;
+VAL_ 2565862423 IMD_Req_S_Iso_ThrsFirstRefEst 1000 "upper Limit" 0 "lower Limit" ;
+VAL_ 2565862423 IMD_Req_S_Earthlift_Status 0 "Earth Disconnector close" 1 "Earth Disconnector open" ;
+VAL_ 2565862423 IMD_Req_S_Factory_Reset 1 "Factory Reset" 0 "no action" ;
+VAL_ 2565862423 IMD_Req_S_Status_Lock 1 "lock, write disable" 0 "unlock,  write enable" ;
+VAL_ 2565862423 IMD_Req_S_Voltage_Thrs 1000 "upper Limit" 1 "lower Limit" 0 "deactivatred" ;
+VAL_ 2565862423 IMD_Req_S_Voltage_Mode 0 "AC + DC" 1 "AC" 2 "DC" ;
+VAL_ 2565862423 IMD_Req_S_Selftest_Period 64255 "upper Limit" 1 "lower Limit" 0 "automatic selftest deactivated" ;
+VAL_ 2565862423 IMD_Req_S_Selftest_Trigger 2 "offline and communication test" 0 "no action" 1 "offline test" ;
+VAL_ 2565862423 IMD_Req_S_Iso_Thrs_Warning 2000 "upper Limit" 30 "lower Limit" ;
+VAL_ 2565862423 IMD_Req_S_Iso_Thrs_Timeout 64255 "upper Limit" 1 "lower Limit" 0 "Alarm deactivate" ;
+VAL_ 2565862423 IMD_Req_S_Iso_Thrs_Error 2000 "upper Limit" 30 "lower Limit" ;
+VAL_ 2565862423 IMD_Req_S_Iso_Power_On_Profile 6 "Service" 5 "Disturbed" 4 "High Capacity" 3 "High Capacity with fast startup" 2 "Standard" 1 "Standard with fast startup" 0 "Custom Profile" ;
+VAL_ 2565862423 IMD_Req_S_Iso_Active_Profile 6 "Service" 5 "Disturbed" 4 "High Capacity" 3 "High Capacity with fast startup" 2 "Standard" 1 "Standard with fast startup" 0 "Custom Profile" ;
+VAL_ 2565862423 IMD_Req_S_Selfh_IsoAlarm_Reset 0 "no action" 1 "self-holding Iso-alarm reset" ;
+VAL_ 2565862423 IMD_Req_S_Selfholding_Iso_Alarm 0 "automatic Iso-alarm reset" 1 "self-holding Iso-alarm" ;
+VAL_ 2565862423 IMD_Req_S_Unbalance_Thrs 45 "upper Limit" 5 "lower Limit" 0 "Unbalance alarm deactivated" ;
+VAL_ 2565862423 IMD_Req_Request_Index 253 "get PreEstState_Diff" 254 "get PreEstimation_State" 117 "set PreEstimation_MaxDiffFactor" 116 "get PreEstimation_MaxDiffFactor" 115 "set Threshold_FirstRefEstimation" 114 "get Threshold_FirstRefEstimation" 113 "set Earthlift_Status" 112 "get Earthlift_Status" 111 "set Factory Reset" 108 "get Status_Warnings and Alarms" 107 "set Status_Lock" 106 "get Status_Lock" 104 "get Status_Device Activity" 103 "set Threshold Undervoltage" 102 "get Threshold Undervoltage" 101 "set Voltage_Mode" 100 "get Voltage_Mode" 98 "get Voltage_HV_pos to Earth" 96 "get Voltage_HV_neg to Earth" 94 "get Voltage_HV system" 92 "get Voltage_Measurement Counter" 90 "get Voltage_HV frequency" 89 "set Self test_Period" 88 "get Self test_Period" 87 "set trigger self test" 84 "get Capacity_Measurement Counter" 82 "get Capacity_Masured Value" 80 "get Time elapsed since last meas" 78 "get Isolation_R_iso_original" 76 "get Isolation_R_iso_corrected" 75 "set Isolation_Threshold Warning" 74 "get Isolation_Threshold Warning" 73 "set Threshold Timeout Meas" 72 "get Threshold Timeout Meas" 71 "set Isolation_Threshold Error" 70 "get Isolation_Threshold Error" 68 "get Isolation_R_iso_status" 66 "get Isolation_R_iso_pos" 64 "get Isolation_R_iso_neg" 62 "get Isolation_Quality" 59 "set Isolation_Power-On Profile" 58 "get Isolation_Power-On Profile" 57 "set Isolation_Active Profile" 56 "get Isolation_Active Profile" 54 "get Isolation_meas counter" 52 "get Device Status_Device Error" 51 "set Self-holding Iso-Alarm Reset" 49 "set Self-holding Activation" 48 "get Self-holding Activation" 47 "set Unbalance_Threshold" 46 "get Unbalance_Threshold" 44 "get Unbalance_Meas Counter" 42 "get Unbalance_Meas Value" 38 "get Device_TypePartB" 36 "get Device_TypePartA" 34 "get Software_Version" 32 "get Software_D-Number" 30 "get Software_Build Number" 28 "get Hardware_SerialNumberPartB" 26 "get Hardware_SerialNumberPartA" 24 "get Hardware_Item-NumberPartB" 22 "get Hardware_Item-NumberPartA" 20 "get Hardware_AH-NumberPartB" 18 "get Hardware_AH-NumberPartA" 16 "get Hardware_AH-History" 14 "get Bootloader_Version" 12 "get Bootloader_D-Number" 10 "get Bootloader_BuildNumber" ;
+VAL_ 2566849012 IMD_G_Iso_R_iso_Corrected 37500 "upper Limit, depends on profile" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849012 IMD_G_Iso_R_iso_Status 0 "Estimation" 1 "Approximation" 2 "Normal Measurement" 3 "SNV = Signal not valid" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit00 0 "Device Error NOT active" 1 "Device Error active" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit01 0 "Connection HV pos OK" 1 "Connection HV pos Error" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit02 0 "Connection HV neg OK" 1 "Connection HV neg Error" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit03 0 "Connection Earth OK" 1 "Connection Earth Error" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit04 0 "Iso Alarm inactive" 1 "Iso Alarm active" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit05 0 "Iso Warning alarm inactive" 1 "Iso Warning alarm active" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit06 0 "Iso Outdated alarm inactive" 1 "Iso Outdated alarm active" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit07 0 "NO Unbalance Alarm, below Thrs" 1 "Unbalance Alarm, above Thrs" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit08 0 "Undervoltage alarm inactive" 1 "Undervoltage alarm active " ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit09 0 "NOT Unsafe to Start" 1 "Unsafe to Start (don't Start)" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit10 0 "Eartlift closed" 1 "Eartlift opened" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit11 0 "reserved, no Alarm" ;
+VAL_ 2566849012 IMD_G_Warni_Alarm_Bit12 0 "reserved, no Alarm" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit13 0 "reserved, no Alarm" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit14 0 "reserved, no Alarm" ;
+VAL_ 2566849012 IMD_G_Warn_Alarm_Bit15 0 "NOT SNV, Other Flags valid" 1 "SNV, Other flags invalid" ;
+VAL_ 2566849012 IMD_G_Device_Activity 0 "Initialization" 1 "Normal Operation" 2 "Selftest" 255 "SNV=Signal not valid 255" ;
+VAL_ 2566849268 IMD_G_Iso_R_iso_neg 50000 "upper Limit" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849268 IMD_G_Iso_R_iso_pos 50000 "upper Limit" 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849268 IMD_G_Iso_R_iso_Original 65535 "SAErs02_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849268 IMD_G_Iso_Quality 100 "upper Limit" 255 "SAEpc06_SNV" 0 "Minimum displayable" 250 "Maximum displayable" ;
+VAL_ 2566849524 IMD_G_Voltage_HV 55120 "upper Limit" 9120 "lower Limit" 65535 "SAEev04_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849524 IMD_G_Voltage_HVneg_Earth 55120 "upper Limit" 9120 "lower Limit" 65535 "SAEev04_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849524 IMD_G_Voltage_HVpos_Earth 55120 "upper Limit" 9120 "lower Limit" 65535 "SAEev04_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849780 IMD_G_Capacity 200 "upper Limit" 1 "lower Limit" 65535 "SAEmd01_SNV" 0 "Minimum displayable" 64255 "Maximum displayable" ;
+VAL_ 2566849780 IMD_G_Unbalance 255 "SAEpc06_SNV" 0 "Error at DC Minus" 50 "Balanced" 100 "Error at DC Plus" ;
+VAL_ 2566849780 IMD_G_HV_Frequency 64000 "upper Limit" 65535 "SAEfq04_SNV" 0 "lower Limit" 64255 "Maximum displayable" ;
+SIG_GROUP_ 2566849012 IMD_G_Warn_Alarm_Status 1 : IMD_G_Warn_Alarm_Bit00 IMD_G_Warn_Alarm_Bit01 IMD_G_Warn_Alarm_Bit02 IMD_G_Warn_Alarm_Bit03 IMD_G_Warn_Alarm_Bit04 IMD_G_Warn_Alarm_Bit05 IMD_G_Warn_Alarm_Bit06 IMD_G_Warn_Alarm_Bit07 IMD_G_Warn_Alarm_Bit08 IMD_G_Warn_Alarm_Bit09 IMD_G_Warn_Alarm_Bit10 IMD_G_Warn_Alarm_Bit11 IMD_G_Warni_Alarm_Bit12 IMD_G_Warn_Alarm_Bit13 IMD_G_Warn_Alarm_Bit14 IMD_G_Warn_Alarm_Bit15;
+

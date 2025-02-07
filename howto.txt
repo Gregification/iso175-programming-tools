@@ -1,0 +1,46 @@
+- context: the iso175 is programmed over CAN. 2 options: automatically with the arduino, or manually with the CANdaptor. 
+    - the arduino program is unfinished. all it does as of 1/28/2025 is read the 
+        DeviceInfo messages the ISO175 tx's on power up. feel free to finish it. 
+    - CANdaptor instructions below.
+    - datasheet(N) about CAN interface. https://www.benderinc.com/fileadmin/content/Products/a/e/iso175_SAEJ1939_D00415_N_XXEN.pdf
+    - datasheet(M) about wiring. https://www.benderinc.com/fileadmin/content/Products/m/e/iso175_D00415_M_XXEN.pdf
+
+- for the love of the $800 board, POWER IT WITH 12V ONLY, to not risk reverse volting it(its tolerant up to -17V).
+
+- communicate with the IMD using the CAN-daptor (can to usb-serial) conenctor.
+    CANdaptor appears as a serial port on your computer. CANdaptor drivers and GUI 
+    can be found on their site (https://www.ewertenergy.com/products.php?item=candapter&page=drivers).
+    the "CANdaptor Message Analyzer" program is the mose useful, can send and
+    receive can messages.
+    - read the datasheet to figure out what to send and received mesasges mean
+    - iso175 product page with all documentation https://www.benderinc.com/products/ground-fault-monitoring-ungrounded/isometer-iso175/
+    - iso175 can message datasheet https://www.benderinc.com/fileadmin/content/Products/a/e/iso175_SAEJ1939_D00415_N_XXEN.pdf
+    - datasheets are indicated by lettering, eg: datasheet 'N' is about can transmissions
+    -see 1.5.3(N) for set commands.
+
+- the only 4 wires are needed. regardless of arduino or CANdaptor. 
+    - 12v power(2 wires), CAN(2 wires)
+    - ignore the earth connection
+    - if using arduino, jump the 2 pins of 'connector A' on the ISO175(see datasheet M).
+        - see arduino code for comments about wiring the ground
+
+- some programs are in this folder that can help
+    - id_generator.cpp : the only useful one. creates the can ID to transmit. section 1.1(N)
+    - setdata_generator.cpp : generates the data for the set command.
+    - 1Bdata_generator.cpp : creates the data bit described in section 1.5.1(N). this is mostly useless as the 
+        datasheet(N) just straight up tells you the value to put
+
+- if using the CANdaptor to transmit, make sure that its actually transmitting!!
+    if must, use the arduino to transmit.
+
+- PGN values quick refrence
+    65281 : PGN_info_General, TX every 100ms. section 1.3.2
+
+- ID valies quick refrence
+    0x1CECFFF4 : device info message. tp.cm_bam message. section 1.3.1
+    0x1CEBFFF4 : device info message. tp.dt message. section 1.3.1
+    0x18eff417 : PGN 61428. pgn request.
+
+- other things wrong with the datasheets
+    - version Q: the LV supply polarity shows both ocnnections as "-", there is no "+" LV connector.
+    - version N: no proof reading "N/A or 0xFF or 0xFF" ???? section 1.4. its like AI generated or something.
